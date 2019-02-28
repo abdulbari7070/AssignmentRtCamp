@@ -143,6 +143,14 @@
     }
   }
 
+  if(isset($_GET['singleAlbumMoveSuccess']))
+  {
+    if($_GET['singleAlbumMoveSuccess']=="true")
+    {
+      echo "<script>alert('Album Downloaded In Drive Root/AlbumData')</script>";
+    }
+  }
+
   if(isset($_GET['singleAlbumSuccess']))
   {
     if($_GET['singleAlbumSuccess']=="true")
