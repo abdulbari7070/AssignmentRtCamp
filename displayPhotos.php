@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Fullscreen slider -->
     <link rel="stylesheet" href="css/fullscreen/jquery-fullsizable.css" />
     <link rel="stylesheet" href="css/fullscreen/jquery-fullsizable-theme.css" />
     <script src="js/fullscreen/jquery-1.7.2.js"></script>
     <script src="https://cdn.rawgit.com/mattbryson/TouchSwipe-Jquery-Plugin/1.6.6/jquery.touchSwipe.min.js"></script>
     <script src="js/fullscreen/jquery-fullsizable.js"></script>
-
+    
     <style type="text/css">
       body
       {
@@ -69,6 +70,9 @@
 
   <body>
     <div class="container">
+    <div style="margin-top:15px; margin-bottom:35px; text-align: center;">
+        <h1 class="display-2">Your Image Gallery</h1>
+      </div>
       <div class="row">
         <?php
           for($i=0;$i<count($final_images);$i++)

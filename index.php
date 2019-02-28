@@ -48,7 +48,7 @@
                 }
                 else
                 {
-                  echo "<a class='dropdown-item' href=$googleLoginUrl>Connect With Google</a>";
+                  echo "<a class='dropdown-item'  style='color:red;' href=$googleLoginUrl>Connect With Google</a>";
                 }
               ?>
               
@@ -117,7 +117,7 @@
               <input type="button" class="btn btn-sm btn-warning" value="View Photos" onclick="window.location = 'displayPhotos.php?id=<?php echo $album_id[$i]; ?>';"/>
               <input type="hidden" name="hiddenAlbumID[]" value="<?php echo $album_id[$i]; ?>">
               <input type="button" name="downloadSingle" class="btn btn-sm btn-warning" value="Download" onclick="window.location = 'singleAlbumDownload.php?id=<?php echo $album_id[$i]; ?>';"/>
-              <input type="button" class="btn btn-sm btn-warning" value="Move To Drive" onclick="window.location = 'downloadAlbum.php?id=<?php echo $album_id[$i]; ?>';"/>
+              <input type="button" class="btn btn-sm btn-warning" value="Move To Drive" onclick="window.location = 'singleAlbumMove.php?id=<?php echo $album_id[$i]; ?>';"/>
             </div>
           </div>
           <?php
